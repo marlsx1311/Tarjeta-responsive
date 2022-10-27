@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+/*font-family: 'Fraunces', serif;
+*/
+
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --Very-dark-green: hsl(156,42%,18%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: var(--Cream);
+}
+.card{
+    width: 344px;
+    height: 612px;
+    background-color: var(--White);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 68px auto;
+
+}
+.card__first-seccion__image{
+    width: 100% ;
+}
+.card__second-seccion__name-product{
+    color: var(--Dark-grayish-blue);
+    font-size: 1em;
+    letter-spacing: 3px;
+    margin: 18px 24px 8px 24px ;
+}
+.card__second-seccion__title{
+    font-family: 'Fraunces', serif;
+    margin: 0 24px 16px 24px ;
+    font-size: 2.2em;
+    color: var(--Very-dark-blue);
+    line-height: 30px;
+}
+.card__second-seccion__description{
+    margin: 0 24px 0 24px;
+    line-height: 22px;
+    color: var(--Dark-grayish-blue);
+    font-weight: 500;
+}
+.card__second-seccion__price{
+    display: flex;
+    align-items: center;
+    margin: 34px 24px 10px 24px;
+    gap: 20px;
+    
+}
+.card__second-seccion__price__discount{
+    font-family: 'Fraunces', serif;
+    color: var(--Dark-cyan);
+    font-size: 2em; 
+}
+.card__second-seccion__price__full{
+    color: var(--Dark-grayish-blue);
+    font-size: 13px;
+}
+.card__second-seccion__button{
+    display: flex;
+    justify-content: center;
+    
+}
+.card__second-seccion__button-accion{
+    width: 294px;
+    height: 47px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    font-weight: 700;
+    font-size: 14px;
+    
+
+}
+.card__second-seccion__button-accion__svg{
+    margin-right: 7px;
+}
+.card__second-seccion__button-accion:hover{
+    background-color: var(--Very-dark-green);
+    cursor: pointer;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+    
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+ @media (min-width: 620px){
+    .card{
+        width: 600px;
+        height: 450px;
+        display: flex;
+        margin: 175px auto 75px;
+    }
+    .card__first-seccion{
+        width: 300px;
+    }
+    .card__second-seccion__title{
+        margin: 24px 24px 20px 24px;
+    }
+    .card__second-seccion{
+        width: 300px;
+    }
+    .card__first-seccion__image{
+        content: url(./images/image-product-desktop.jpg);
+        
+    }
+    .card__second-seccion__button-accion{
+        margin: 20px 32px 32px 32px;
+    }
+    .card__second-seccion__title{
+        margin: 24px 24px 20px 24px;
+    }
+        
+ }
